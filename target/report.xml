@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="48.180579">
+<testcase classname="Posts feature in RealEstate Application" name="Verify whether the user can use trash functionality in posts section to retrieve the deleted posts" time="48.180579">
+<system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks on login button............................................passed
+And User is redirected to dashboard.........................................passed
+And User navigates to posts section.........................................passed
+Then User is redirected to Posts section....................................passed
+When User clicks on trash option............................................passed
+And User selects multiple checkboxes of trash posts items...................passed
+Then User clicks on bulk actions of trash functionality.....................passed
+And User selects restore option in bulk functionality"<restore>"............passed
+Then User clicks on apply button in trash section...........................passed
+]]></system-out>
+</testcase>
+</testsuite>

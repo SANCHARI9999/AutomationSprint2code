@@ -1,0 +1,198 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Login Functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7050017000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "stepDefinition.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 465043400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "stepDefinition.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9932499400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8108700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is redirected to dashboard",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1350558100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates to posts section",
+            "match": {
+              "location": "stepDefinition.user_navigates_to_posts_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3015262500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is redirected to Posts section",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_Posts_section()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-17T07:13:56.635Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11244320000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.init()"
+            }
+          }
+        ],
+        "line": 68,
+        "name": "Verify whether the user can use trash functionality in posts section to retrieve the deleted posts",
+        "description": "",
+        "id": "posts-feature-in-realestate-application;verify-whether-the-user-can-use-trash-functionality-in-posts-section-to-retrieve-the-deleted-posts",
+        "after": [
+          {
+            "result": {
+              "duration": 1316354800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.unit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4066857300,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "User clicks on trash option",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_trash_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3309845200,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "User selects multiple checkboxes of trash posts items",
+            "match": {
+              "location": "stepDefinition.user_selects_multiple_checkboxes_of_trash_posts_items()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82640900,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "User clicks on bulk actions of trash functionality",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_bulk_actions_of_trash_functionality()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 215488000,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "User selects restore option in bulk functionality\"\u003crestore\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003crestore\u003e\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinition.user_selects_restore_option_in_bulk_functionality(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6116688500,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "User clicks on apply button in trash section",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_apply_button_in_trash_section()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@trash_functionality_in_posts_section"
+          }
+        ]
+      }
+    ],
+    "name": "Posts feature in RealEstate Application",
+    "description": "",
+    "id": "posts-feature-in-realestate-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/signup.feature",
+    "tags": []
+  }
+]
