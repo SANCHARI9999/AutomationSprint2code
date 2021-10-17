@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7050017000,
+              "duration": 6492060900,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 465043400,
+              "duration": 371964600,
               "status": "passed"
             },
             "line": 5,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 9932499400,
+              "duration": 10060058200,
               "status": "passed"
             },
             "line": 6,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 8108700,
+              "duration": 6554400,
               "status": "passed"
             },
             "line": 7,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 1350558100,
+              "duration": 1700265400,
               "status": "passed"
             },
             "line": 8,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 3015262500,
+              "duration": 3016655900,
               "status": "passed"
             },
             "line": 9,
@@ -84,11 +84,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-17T07:13:56.635Z",
+        "start_timestamp": "2021-10-17T15:37:51.479Z",
         "before": [
           {
             "result": {
-              "duration": 11244320000,
+              "duration": 3603355500,
               "status": "passed"
             },
             "match": {
@@ -96,14 +96,14 @@
             }
           }
         ],
-        "line": 68,
-        "name": "Verify whether the user can use trash functionality in posts section to retrieve the deleted posts",
+        "line": 84,
+        "name": "Verify whether the user can use edit functionality to edit dates",
         "description": "",
-        "id": "posts-feature-in-realestate-application;verify-whether-the-user-can-use-trash-functionality-in-posts-section-to-retrieve-the-deleted-posts",
+        "id": "posts-feature-in-realestate-application;verify-whether-the-user-can-use-edit-functionality-to-edit-dates",
         "after": [
           {
             "result": {
-              "duration": 1316354800,
+              "duration": 802970700,
               "status": "passed"
             },
             "match": {
@@ -116,74 +116,102 @@
         "steps": [
           {
             "result": {
-              "duration": 4066857300,
+              "duration": 6592307300,
               "status": "passed"
             },
-            "line": 69,
-            "name": "User clicks on trash option",
+            "line": 85,
+            "name": "User clicks on the post\"\u003cgood\u003e\"",
             "match": {
-              "location": "stepDefinition.user_clicks_on_trash_option()"
+              "arguments": [
+                {
+                  "val": "\"\u003cgood\u003e\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinition.user_clicks_on_the_post(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3309845200,
+              "duration": 3213876500,
               "status": "passed"
             },
-            "line": 70,
-            "name": "User selects multiple checkboxes of trash posts items",
+            "line": 86,
+            "name": "User clicks on publish immediately\"\u003cedit\u003e\"",
             "match": {
-              "location": "stepDefinition.user_selects_multiple_checkboxes_of_trash_posts_items()"
+              "arguments": [
+                {
+                  "val": "\"\u003cedit\u003e\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinition.user_clicks_on_publish_immediately(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 82640900,
+              "duration": 3135816300,
               "status": "passed"
             },
-            "line": 71,
-            "name": "User clicks on bulk actions of trash functionality",
+            "line": 87,
+            "name": "User clicks on date dropdown",
             "match": {
-              "location": "stepDefinition.user_clicks_on_bulk_actions_of_trash_functionality()"
+              "location": "stepDefinition.user_clicks_on_date_dropdown()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 215488000,
+              "duration": 826097500,
               "status": "passed"
             },
-            "line": 72,
-            "name": "User selects restore option in bulk functionality\"\u003crestore\u003e\"",
+            "line": 88,
+            "name": "User selects 06-June option\"\u003c06-June\u003e\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"\u003crestore\u003e\"",
-                  "offset": 49
+                  "val": "06",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003c06-June\u003e\"",
+                  "offset": 27
                 }
               ],
-              "location": "stepDefinition.user_selects_restore_option_in_bulk_functionality(String)"
+              "location": "stepDefinition.user_selects_June_option(Integer,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 6116688500,
+              "duration": 3184290900,
               "status": "passed"
             },
-            "line": 73,
-            "name": "User clicks on apply button in trash section",
+            "line": 89,
+            "name": "User clicks on publish button in edit functionality to update date",
             "match": {
-              "location": "stepDefinition.user_clicks_on_apply_button_in_trash_section()"
+              "location": "stepDefinition.user_clicks_on_publish_button_in_edit_functionality_to_update_date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4168884400,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "User clicks on update button in edit functionality to update the changes",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_update_button_in_edit_functionality_to_update_the_changes()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@trash_functionality_in_posts_section"
+            "name": "@edit_functionality_taking_previous_dates"
           }
         ]
       }

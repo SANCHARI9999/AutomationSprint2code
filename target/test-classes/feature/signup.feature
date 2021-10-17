@@ -13,6 +13,7 @@ Feature: Posts feature in RealEstate Application
     When User clicks on add new field
     And User creates any post in add title
     Then User clicks on publish button
+    Then User clicks on update button
 
   @create_any_categories
   Scenario: Verify whether the user can create any category
@@ -71,3 +72,19 @@ Feature: Posts feature in RealEstate Application
     Then User clicks on bulk actions of trash functionality
     And User selects restore option in bulk functionality"<restore>"
     Then User clicks on apply button in trash section
+
+  @edit_functionality
+  Scenario: Verify whether the user can use edit functionality
+    When User clicks on any post"<first post>"
+    And User edits the changes to "<first posting>"
+    Then User clicks on publish button in edit functionality
+    Then User clicks on update button in edit functionality
+
+  @edit_functionality_taking_previous_dates
+  Scenario: Verify whether the user can use edit functionality to edit dates
+    When User clicks on the post"<good>"
+    And User clicks on publish immediately"<edit>"
+    Then User clicks on date dropdown
+    And User selects 06-June option"<06-June>"
+    Then User clicks on publish button in edit functionality to update date
+    Then User clicks on update button in edit functionality to update the changes

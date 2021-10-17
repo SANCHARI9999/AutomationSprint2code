@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="48.180579">
-<testcase classname="Posts feature in RealEstate Application" name="Verify whether the user can use trash functionality in posts section to retrieve the deleted posts" time="48.180579">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="47.188667">
+<testcase classname="Posts feature in RealEstate Application" name="Verify whether the user can use edit functionality to edit dates" time="47.188667">
 <system-out><![CDATA[Given User is on the login page.............................................passed
 When User enter username and password.......................................passed
 Then User clicks on login button............................................passed
 And User is redirected to dashboard.........................................passed
 And User navigates to posts section.........................................passed
 Then User is redirected to Posts section....................................passed
-When User clicks on trash option............................................passed
-And User selects multiple checkboxes of trash posts items...................passed
-Then User clicks on bulk actions of trash functionality.....................passed
-And User selects restore option in bulk functionality"<restore>"............passed
-Then User clicks on apply button in trash section...........................passed
+When User clicks on the post"<good>"........................................passed
+And User clicks on publish immediately"<edit>"..............................passed
+Then User clicks on date dropdown...........................................passed
+And User selects 06-June option"<06-June>"..................................passed
+Then User clicks on publish button in edit functionality to update date.....passed
+Then User clicks on update button in edit functionality to update the changes.passed
 ]]></system-out>
 </testcase>
 </testsuite>

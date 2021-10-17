@@ -73,61 +73,71 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Verify whether the user can use trash functionality in posts section to retrieve the deleted posts",
+  "name": "Verify whether the user can use edit functionality to edit dates",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@trash_functionality_in_posts_section"
+      "name": "@edit_functionality_taking_previous_dates"
     }
   ]
 });
 formatter.step({
-  "name": "User clicks on trash option",
+  "name": "User clicks on the post\"\u003cgood\u003e\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepDefinition.user_clicks_on_trash_option()"
+  "location": "stepDefinition.user_clicks_on_the_post(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User selects multiple checkboxes of trash posts items",
+  "name": "User clicks on publish immediately\"\u003cedit\u003e\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepDefinition.user_selects_multiple_checkboxes_of_trash_posts_items()"
+  "location": "stepDefinition.user_clicks_on_publish_immediately(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks on bulk actions of trash functionality",
+  "name": "User clicks on date dropdown",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepDefinition.user_clicks_on_bulk_actions_of_trash_functionality()"
+  "location": "stepDefinition.user_clicks_on_date_dropdown()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User selects restore option in bulk functionality\"\u003crestore\u003e\"",
+  "name": "User selects 06-June option\"\u003c06-June\u003e\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepDefinition.user_selects_restore_option_in_bulk_functionality(String)"
+  "location": "stepDefinition.user_selects_June_option(Integer,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks on apply button in trash section",
+  "name": "User clicks on publish button in edit functionality to update date",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepDefinition.user_clicks_on_apply_button_in_trash_section()"
+  "location": "stepDefinition.user_clicks_on_publish_button_in_edit_functionality_to_update_date()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on update button in edit functionality to update the changes",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepDefinition.user_clicks_on_update_button_in_edit_functionality_to_update_the_changes()"
 });
 formatter.result({
   "status": "passed"

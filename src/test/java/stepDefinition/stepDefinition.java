@@ -143,7 +143,7 @@ public class stepDefinition {
 	public void user_creates_any_post_in_add_title() {
 
 		try {
-			driver.findElement(By.name("post_title")).sendKeys("Hello Sanchari Singha Roy"); 
+			driver.findElement(By.name("post_title")).sendKeys("Hello I am Sanchari Singha Roy"); 
 		
 	    
 		}
@@ -165,7 +165,19 @@ public class stepDefinition {
 			Assert.fail();
 		}
 	}
-
+	@Then("User clicks on update button")
+	public void user_clicks_on_update_button() {
+		try {
+			Thread.sleep(3000);
+			driver.findElement(By.name("save")).click(); 
+		System.out.println("clicked on update button");
+	    
+		}
+		catch(Exception e) {
+			System.out.println("not able to click"+e);
+			//Assert.fail();
+		} 
+	}
 	
 	@When("User clicks on categories")
 	public void user_clicks_on_categories() {
@@ -527,8 +539,135 @@ public class stepDefinition {
 		} 
 	}
 
+	@When("User clicks on any post{string}")
+	public void user_clicks_on_any_post(String string) {
+		try {
+			Thread.sleep(3000);
+			driver.findElement(By.xpath("//*[@id=\"post-11961\"]/td[1]/strong/a")).click(); 
+		
+	    
+		}
+		catch(Exception e) {
+			System.out.println("not able to click"+e);
+			//Assert.fail();
+		} 
+	}
 
-	
+	@When("User edits the changes to {string}")
+	public void user_edits_the_changes_to(String string) {
+		try {
+			driver.findElement(By.name("post_title")).sendKeys("ing"); 
+		
+	    
+		}
+		catch(Exception e) {
+			System.out.println("not able to enter"+e);
+			Assert.fail();
+		}
+	}
+
+	@Then("User clicks on publish button in edit functionality")
+	public void user_clicks_on_publish_button_in_edit_functionality() {
+		try {
+			Thread.sleep(3000);
+			driver.findElement(By.id("publish")).click(); 
+		System.out.println("clicked on publish button");
+	    
+		}
+		catch(Exception e) {
+			System.out.println("not able to click"+e);
+			//Assert.fail();
+		} 
+	}
+
+	@Then("User clicks on update button in edit functionality")
+	public void user_clicks_on_update_button_in_edit_functionality() {
+		try {
+			Thread.sleep(3000);
+			driver.findElement(By.name("save")).click(); 
+		System.out.println("clicked on update button");
+	    
+		}
+		catch(Exception e) {
+			System.out.println("not able to click"+e);
+			//Assert.fail();
+		} 
+	}
+	@When("User clicks on the post{string}")
+	public void user_clicks_on_the_post(String string) {
+		try {
+			Thread.sleep(3000);
+			driver.findElement(By.xpath("//*[@id=\"post-11727\"]/td[1]/strong/a")).click(); 
+		
+	    
+		}
+		catch(Exception e) {
+			System.out.println("not able to click"+e);
+			//Assert.fail();
+		} 
+	}
+
+	@When("User clicks on publish immediately{string}")
+	public void user_clicks_on_publish_immediately(String string) {
+		try {
+			Thread.sleep(3000);
+			driver.findElement(By.xpath("//*[@id=\"misc-publishing-actions\"]/div[3]/a/span[1]")).click(); 
+		
+	    
+		}
+		catch(Exception e) {
+			System.out.println("not able to click"+e);
+			//Assert.fail();
+		} 
+	}
+
+	@Then("User clicks on date dropdown")
+	public void user_clicks_on_date_dropdown() {
+		try {
+			Thread.sleep(3000);
+			driver.findElement(By.id("mm")).click(); 
+		
+	    
+		}
+		catch(Exception e) {
+			System.out.println("not able to click"+e);
+			//Assert.fail();
+		} 
+	}
+
+	@Then("User selects {int}-June option{string}")
+	public void user_selects_June_option(Integer int1, String string) {
+		Select bulkobj = new Select(driver.findElement(By.id("mm")));
+		bulkobj.selectByIndex(4);
+	}
+
+	@Then("User clicks on publish button in edit functionality to update date")
+	public void user_clicks_on_publish_button_in_edit_functionality_to_update_date() {
+		try {
+			Thread.sleep(3000);
+			driver.findElement(By.id("publish")).click(); 
+		System.out.println("clicked on publish button");
+	    
+		}
+		catch(Exception e) {
+			System.out.println("not able to click"+e);
+			//Assert.fail();
+		} 
+	}
+
+	@Then("User clicks on update button in edit functionality to update the changes")
+	public void user_clicks_on_update_button_in_edit_functionality_to_update_the_changes() {
+		try {
+			Thread.sleep(3000);
+			driver.findElement(By.name("save")).click(); 
+		System.out.println("clicked on update button");
+	    
+		}
+		catch(Exception e) {
+			System.out.println("not able to click"+e);
+			//Assert.fail();
+		} 
+	}
 }
 
 
