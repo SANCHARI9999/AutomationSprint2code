@@ -75,10 +75,10 @@ Feature: Posts feature in RealEstate Application
 
   @edit_functionality
   Scenario: Verify whether the user can use edit functionality
-    When User clicks on any post"<first post>"
-    And User edits the changes to "<first posting>"
+    When User clicks on any post"<flat>"
+    And User edits the changes to "<flating>"
     Then User clicks on publish button in edit functionality
-    Then User clicks on update button in edit functionality
+   
 
   @edit_functionality_taking_previous_dates
   Scenario: Verify whether the user can use edit functionality to edit dates

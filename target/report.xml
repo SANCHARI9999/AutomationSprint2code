@@ -1,6 +1,136 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="47.188667">
-<testcase classname="Posts feature in RealEstate Application" name="Verify whether the user can use edit functionality to edit dates" time="47.188667">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="11" time="504.42102">
+<testcase classname="Posts feature in RealEstate Application" name="Verify whether the user can create any post" time="49.364152">
+<system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks on login button............................................passed
+And User is redirected to dashboard.........................................passed
+And User navigates to posts section.........................................passed
+Then User is redirected to Posts section....................................passed
+When User clicks on add new field...........................................passed
+And User creates any post in add title......................................passed
+Then User clicks on publish button..........................................passed
+Then User clicks on update button...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Posts feature in RealEstate Application" name="Verify whether the user can create any category" time="41.299839">
+<system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks on login button............................................passed
+And User is redirected to dashboard.........................................passed
+And User navigates to posts section.........................................passed
+Then User is redirected to Posts section....................................passed
+When User clicks on categories..............................................passed
+And User creates any category in name section...............................passed
+Then User clicks on add new category button.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Posts feature in RealEstate Application" name="Verify whether the user can create any tag" time="42.620627">
+<system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks on login button............................................passed
+And User is redirected to dashboard.........................................passed
+And User navigates to posts section.........................................passed
+Then User is redirected to Posts section....................................passed
+When User clicks on tags....................................................passed
+And User creates any tag in name section....................................passed
+Then User clicks on add new tag button......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Posts feature in RealEstate Application" name="Verify whether the user can use bulk functionality" time="45.58122">
+<system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks on login button............................................passed
+And User is redirected to dashboard.........................................passed
+And User navigates to posts section.........................................passed
+Then User is redirected to Posts section....................................passed
+When User selects checkbox of any posts.....................................passed
+Then User clicks on bulk actions............................................passed
+And User selects move to trash option"<move to trash>"......................passed
+Then User clicks on apply button............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Posts feature in RealEstate Application" name="Verify search post functionality by name" time="42.795174">
+<system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks on login button............................................passed
+And User is redirected to dashboard.........................................passed
+And User navigates to posts section.........................................passed
+Then User is redirected to Posts section....................................passed
+When User clicks the search field...........................................passed
+And User enters the name"<hel>".............................................passed
+Then User clicks the search button..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Posts feature in RealEstate Application" name="Verify filter comment functionality by post type" time="42.371354">
+<system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks on login button............................................passed
+And User is redirected to dashboard.........................................passed
+And User navigates to posts section.........................................passed
+Then User is redirected to Posts section....................................passed
+When User clicks on All dates dropdown list.................................passed
+And User selects any option"<March 2021>"...................................passed
+When User clicks on All categories dropdown list............................passed
+And User selects any option"<KESAV>"........................................passed
+Then User clicks on filter button...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Posts feature in RealEstate Application" name="Verify whether the user can use bulk functionality in categories section" time="50.273529">
+<system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks on login button............................................passed
+And User is redirected to dashboard.........................................passed
+And User navigates to posts section.........................................passed
+Then User is redirected to Posts section....................................passed
+When User clicks on categories option.......................................passed
+And User selects multiple checkboxes of categories..........................passed
+Then User clicks on bulk actions of categories..............................passed
+And User selects delete option in categories bulk functionality"<delete>"...passed
+Then User clicks on apply button in categories section......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Posts feature in RealEstate Application" name="Verify whether the user can use bulk functionality in tags section" time="49.356273">
+<system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks on login button............................................passed
+And User is redirected to dashboard.........................................passed
+And User navigates to posts section.........................................passed
+Then User is redirected to Posts section....................................passed
+When User clicks on tags option.............................................passed
+And User selects multiple checkboxes of tags................................passed
+Then User clicks on bulk actions of tags....................................passed
+And User selects delete option in tags bulk functionality"<delete>".........passed
+Then User clicks on apply button in tags section............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Posts feature in RealEstate Application" name="Verify whether the user can use trash functionality in posts section to retrieve the deleted posts" time="48.281156">
+<system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks on login button............................................passed
+And User is redirected to dashboard.........................................passed
+And User navigates to posts section.........................................passed
+Then User is redirected to Posts section....................................passed
+When User clicks on trash option............................................passed
+And User selects multiple checkboxes of trash posts items...................passed
+Then User clicks on bulk actions of trash functionality.....................passed
+And User selects restore option in bulk functionality"<restore>"............passed
+Then User clicks on apply button in trash section...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Posts feature in RealEstate Application" name="Verify whether the user can use edit functionality" time="41.717391">
+<system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks on login button............................................passed
+And User is redirected to dashboard.........................................passed
+And User navigates to posts section.........................................passed
+Then User is redirected to Posts section....................................passed
+When User clicks on any post"<flat>"........................................passed
+And User edits the changes to "<flating>"...................................passed
+Then User clicks on publish button in edit functionality....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Posts feature in RealEstate Application" name="Verify whether the user can use edit functionality to edit dates" time="50.760305">
 <system-out><![CDATA[Given User is on the login page.............................................passed
 When User enter username and password.......................................passed
 Then User clicks on login button............................................passed

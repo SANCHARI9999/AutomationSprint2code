@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6492060900,
+              "duration": 10339898500,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 371964600,
+              "duration": 257477001,
               "status": "passed"
             },
             "line": 5,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 10060058200,
+              "duration": 12466109500,
               "status": "passed"
             },
             "line": 6,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 6554400,
+              "duration": 5828901,
               "status": "passed"
             },
             "line": 7,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 1700265400,
+              "duration": 3058472199,
               "status": "passed"
             },
             "line": 8,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 3016655900,
+              "duration": 3007392600,
               "status": "passed"
             },
             "line": 9,
@@ -84,11 +84,1735 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-17T15:37:51.479Z",
+        "start_timestamp": "2021-10-18T05:22:05.153Z",
         "before": [
           {
             "result": {
-              "duration": 3603355500,
+              "duration": 3213386899,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.init()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Verify whether the user can create any post",
+        "description": "",
+        "id": "posts-feature-in-realestate-application;verify-whether-the-user-can-create-any-post",
+        "after": [
+          {
+            "result": {
+              "duration": 846724101,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.unit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3896043101,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User clicks on add new field",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_add_new_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3297950800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User creates any post in add title",
+            "match": {
+              "location": "stepDefinition.user_creates_any_post_in_add_title()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3168857500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks on publish button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_publish_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5795474500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User clicks on update button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_update_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create_any_post"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login Functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9240183400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "stepDefinition.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 248206399,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "stepDefinition.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12417664100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6822800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is redirected to dashboard",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1884158200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates to posts section",
+            "match": {
+              "location": "stepDefinition.user_navigates_to_posts_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3009483699,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is redirected to Posts section",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_Posts_section()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:22:54.521Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1508328000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.init()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Verify whether the user can create any category",
+        "description": "",
+        "id": "posts-feature-in-realestate-application;verify-whether-the-user-can-create-any-category",
+        "after": [
+          {
+            "result": {
+              "duration": 776598400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.unit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5963126300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User clicks on categories",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_categories()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3137287301,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User creates any category in name section",
+            "match": {
+              "location": "stepDefinition.user_creates_any_category_in_name_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3107044799,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User clicks on add new category button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_add_new_category_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create_any_categories"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login Functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8639036101,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "stepDefinition.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 277225301,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "stepDefinition.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13717835900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8658000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is redirected to dashboard",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2971112801,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates to posts section",
+            "match": {
+              "location": "stepDefinition.user_navigates_to_posts_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3019876500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is redirected to Posts section",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_Posts_section()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:23:35.825Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1634806300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.init()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Verify whether the user can create any tag",
+        "description": "",
+        "id": "posts-feature-in-realestate-application;verify-whether-the-user-can-create-any-tag",
+        "after": [
+          {
+            "result": {
+              "duration": 769235100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.unit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5313484000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User clicks on tags",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_tags()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3173944199,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User creates any tag in name section",
+            "match": {
+              "location": "stepDefinition.user_creates_any_tag_in_name_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3094374099,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User clicks on add new tag button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_add_new_tag_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create_any_tag"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login Functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9717642900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "stepDefinition.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 248963101,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "stepDefinition.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13110402099,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9595899,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is redirected to dashboard",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1888609701,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates to posts section",
+            "match": {
+              "location": "stepDefinition.user_navigates_to_posts_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3019583601,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is redirected to Posts section",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_Posts_section()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:24:18.455Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1377929799,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.init()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Verify whether the user can use bulk functionality",
+        "description": "",
+        "id": "posts-feature-in-realestate-application;verify-whether-the-user-can-use-bulk-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 752155000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.unit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3255215400,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User selects checkbox of any posts",
+            "match": {
+              "location": "stepDefinition.user_selects_checkbox_of_any_posts()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3127946700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User clicks on bulk actions",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_bulk_actions()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3197834999,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User selects move to trash option\"\u003cmove to trash\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cmove to trash\u003e\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.user_selects_move_to_trash_option(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5873660400,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User clicks on apply button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_apply_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bulkfunctionality_in_posts_section"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login Functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10281373000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "stepDefinition.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 258928101,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "stepDefinition.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12972542400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6508001,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is redirected to dashboard",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2350064199,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates to posts section",
+            "match": {
+              "location": "stepDefinition.user_navigates_to_posts_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3018904600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is redirected to Posts section",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_Posts_section()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:25:04.037Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1254061199,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.init()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Verify search post functionality by name",
+        "description": "",
+        "id": "posts-feature-in-realestate-application;verify-search-post-functionality-by-name",
+        "after": [
+          {
+            "result": {
+              "duration": 823160999,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.unit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3118022900,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User clicks the search field",
+            "match": {
+              "location": "stepDefinition.user_clicks_the_search_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3090395500,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User enters the name\"\u003chel\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003chel\u003e\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinition.user_enters_the_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5620536800,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User clicks the search button",
+            "match": {
+              "location": "stepDefinition.user_clicks_the_search_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search_funtion"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login Functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8982215599,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "stepDefinition.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 236972701,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "stepDefinition.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11305831900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5093900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is redirected to dashboard",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1757315000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates to posts section",
+            "match": {
+              "location": "stepDefinition.user_navigates_to_posts_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3006701900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is redirected to Posts section",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_Posts_section()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:25:46.834Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1388235800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.init()"
+            }
+          }
+        ],
+        "line": 45,
+        "name": "Verify filter comment functionality by post type",
+        "description": "",
+        "id": "posts-feature-in-realestate-application;verify-filter-comment-functionality-by-post-type",
+        "after": [
+          {
+            "result": {
+              "duration": 792377600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.unit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3101398200,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User clicks on All dates dropdown list",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_All_dates_dropdown_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3207816400,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User selects any option\"\u003cMarch 2021\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cMarch 2021\u003e\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinition.user_selects_any_option(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3479538299,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "User clicks on All categories dropdown list",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_All_categories_dropdown_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3153079900,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "User selects any option\"\u003cKESAV\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cKESAV\u003e\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinition.user_selects_any_option(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1953841599,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "User clicks on filter button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_filter_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter_funtion"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login Functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9077081201,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "stepDefinition.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 233901200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "stepDefinition.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12280074300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6132700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is redirected to dashboard",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1791188499,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates to posts section",
+            "match": {
+              "location": "stepDefinition.user_navigates_to_posts_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3014904599,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is redirected to Posts section",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_Posts_section()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:26:29.209Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1311737499,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.init()"
+            }
+          }
+        ],
+        "line": 53,
+        "name": "Verify whether the user can use bulk functionality in categories section",
+        "description": "",
+        "id": "posts-feature-in-realestate-application;verify-whether-the-user-can-use-bulk-functionality-in-categories-section",
+        "after": [
+          {
+            "result": {
+              "duration": 754923800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.unit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5810340600,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "User clicks on categories option",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_categories_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3257415599,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User selects multiple checkboxes of categories",
+            "match": {
+              "location": "stepDefinition.user_selects_multiple_checkboxes_of_categories()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3138586799,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "User clicks on bulk actions of categories",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_bulk_actions_of_categories()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3155894801,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "User selects delete option in categories bulk functionality\"\u003cdelete\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cdelete\u003e\"",
+                  "offset": 59
+                }
+              ],
+              "location": "stepDefinition.user_selects_delete_option_in_categories_bulk_functionality(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6440516400,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "User clicks on apply button in categories section",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_apply_button_in_categories_section()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bulkfunctionality_in_categories_section"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login Functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10246961700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "stepDefinition.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 246813700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "stepDefinition.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11759122600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4082599,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is redirected to dashboard",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1865150000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates to posts section",
+            "match": {
+              "location": "stepDefinition.user_navigates_to_posts_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3026683400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is redirected to Posts section",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_Posts_section()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:27:19.486Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1417918901,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.init()"
+            }
+          }
+        ],
+        "line": 61,
+        "name": "Verify whether the user can use bulk functionality in tags section",
+        "description": "",
+        "id": "posts-feature-in-realestate-application;verify-whether-the-user-can-use-bulk-functionality-in-tags-section",
+        "after": [
+          {
+            "result": {
+              "duration": 813983000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.unit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5215045800,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "User clicks on tags option",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_tags_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3268975599,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "User selects multiple checkboxes of tags",
+            "match": {
+              "location": "stepDefinition.user_selects_multiple_checkboxes_of_tags()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3118280200,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "User clicks on bulk actions of tags",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_bulk_actions_of_tags()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3148040100,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "User selects delete option in tags bulk functionality\"\u003cdelete\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cdelete\u003e\"",
+                  "offset": 53
+                }
+              ],
+              "location": "stepDefinition.user_selects_delete_option_in_tags_bulk_functionality(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5223902501,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "User clicks on apply button in tags section",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_apply_button_in_tags_section()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bulkfunctionality_in_tags_section"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login Functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8607821399,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "stepDefinition.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 244421800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "stepDefinition.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12664954399,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11479800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is redirected to dashboard",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1721879199,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates to posts section",
+            "match": {
+              "location": "stepDefinition.user_navigates_to_posts_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3023821800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is redirected to Posts section",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_Posts_section()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:28:08.847Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1276595100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.init()"
+            }
+          }
+        ],
+        "line": 69,
+        "name": "Verify whether the user can use trash functionality in posts section to retrieve the deleted posts",
+        "description": "",
+        "id": "posts-feature-in-realestate-application;verify-whether-the-user-can-use-trash-functionality-in-posts-section-to-retrieve-the-deleted-posts",
+        "after": [
+          {
+            "result": {
+              "duration": 1601784400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.unit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4255559100,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "User clicks on trash option",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_trash_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3226062400,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "User selects multiple checkboxes of trash posts items",
+            "match": {
+              "location": "stepDefinition.user_selects_multiple_checkboxes_of_trash_posts_items()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3106704000,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "User clicks on bulk actions of trash functionality",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_bulk_actions_of_trash_functionality()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3151484401,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "User selects restore option in bulk functionality\"\u003crestore\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003crestore\u003e\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinition.user_selects_restore_option_in_bulk_functionality(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5387468400,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "User clicks on apply button in trash section",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_apply_button_in_trash_section()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@trash_functionality_in_posts_section"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login Functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9439474000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "stepDefinition.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 217081900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "stepDefinition.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11246686300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10152601,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is redirected to dashboard",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1828514100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates to posts section",
+            "match": {
+              "location": "stepDefinition.user_navigates_to_posts_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3025724500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is redirected to Posts section",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_Posts_section()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:28:57.133Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2320214700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.init()"
+            }
+          }
+        ],
+        "line": 77,
+        "name": "Verify whether the user can use edit functionality",
+        "description": "",
+        "id": "posts-feature-in-realestate-application;verify-whether-the-user-can-use-edit-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 828561700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks1.unit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6511333001,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "User clicks on any post\"\u003cflat\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cflat\u003e\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinition.user_clicks_on_any_post(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3144660800,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "User edits the changes to \"\u003cflating\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cflating\u003e\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinition.user_edits_the_changes_to(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3143869900,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "User clicks on publish button in edit functionality",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_publish_button_in_edit_functionality()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@edit_functionality"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login Functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8797251000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "stepDefinition.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 230485199,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "stepDefinition.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11283087600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "stepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4803599,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is redirected to dashboard",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1787328101,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates to posts section",
+            "match": {
+              "location": "stepDefinition.user_navigates_to_posts_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3019258800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is redirected to Posts section",
+            "match": {
+              "location": "stepDefinition.user_is_redirected_to_Posts_section()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:29:38.855Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1238688299,
               "status": "passed"
             },
             "match": {
@@ -103,7 +1827,7 @@
         "after": [
           {
             "result": {
-              "duration": 802970700,
+              "duration": 729146799,
               "status": "passed"
             },
             "match": {
@@ -116,7 +1840,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6592307300,
+              "duration": 6510404901,
               "status": "passed"
             },
             "line": 85,
@@ -134,7 +1858,7 @@
           },
           {
             "result": {
-              "duration": 3213876500,
+              "duration": 3131948499,
               "status": "passed"
             },
             "line": 86,
@@ -152,7 +1876,7 @@
           },
           {
             "result": {
-              "duration": 3135816300,
+              "duration": 3121122201,
               "status": "passed"
             },
             "line": 87,
@@ -164,7 +1888,7 @@
           },
           {
             "result": {
-              "duration": 826097500,
+              "duration": 3242490201,
               "status": "passed"
             },
             "line": 88,
@@ -186,7 +1910,7 @@
           },
           {
             "result": {
-              "duration": 3184290900,
+              "duration": 3152075600,
               "status": "passed"
             },
             "line": 89,
@@ -198,7 +1922,7 @@
           },
           {
             "result": {
-              "duration": 4168884400,
+              "duration": 4510910100,
               "status": "passed"
             },
             "line": 90,
